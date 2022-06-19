@@ -9,4 +9,6 @@ public interface UserSecurityService {
 
 	public List<UserSecurity> findGroupByUsername(String username);
 	
+	public UserSecurity createUserSecurity(UserSecurity userSecurity);
+	
 }

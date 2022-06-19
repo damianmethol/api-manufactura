@@ -32,8 +32,10 @@ public class UserSecurity implements Serializable {
 	@Column(name = "group_id")
 	private Long groupId;
 
+	@Column(name = "username")
 	private String username;
 
+	@Column(name = "group_name")
 	private String groupName;
 
 	public UserSecurity() {

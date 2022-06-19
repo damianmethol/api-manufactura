@@ -17,10 +17,10 @@ insert into security_groups (group_name, group_description) values ('Group C', '
 insert into security_groups (group_name, group_description) values ('Group D', 'Descripcion Grupo D');
 
 
-insert into user_security (user_id, lvl_id, group_id) values (2,4,4);
-insert into user_security (user_id, lvl_id, group_id) values (2,1,4);
-insert into user_security (user_id, lvl_id, group_id) values (1,1,1);
-insert into user_security (user_id, lvl_id, group_id) values (3,2,3);
-insert into user_security (user_id, lvl_id, group_id) values (4,3,1);
-insert into user_security (user_id, lvl_id, group_id) values (1,3,2);
+insert into user_security (user_id, lvl_id, group_id, group_name, username) values (2,4,4, 'Group D', 'manuReq');
+insert into user_security (user_id, lvl_id, group_id, group_name, username) values (2,1,4, 'Group D', 'manuReq');
+insert into user_security (user_id, lvl_id, group_id, group_name, username) values (1,1,1, 'Group A', 'damianMet');
+insert into user_security (user_id, lvl_id, group_id, group_name, username) values (3,2,3, 'Group C', 'javiPoz');
+insert into user_security (user_id, lvl_id, group_id, group_name, username) values (4,3,1, 'Group A', 'luisRos');
+insert into user_security (user_id, lvl_id, group_id, group_name, username) values (1,3,2, 'Group B', 'damianMet');
 

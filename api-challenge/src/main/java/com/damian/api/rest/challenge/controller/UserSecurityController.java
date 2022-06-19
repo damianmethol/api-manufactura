@@ -20,7 +20,13 @@ public class UserSecurityController {
 	
 	@GetMapping("/getGroupByUsername/{username}")
 	public List<UserSecurity> getGroupByUsername(@PathVariable("username") String username){
-		return userSecurityService.findGroupByUsername(username);
+		try{
+			return userSecurityService.findGroupByUsername(username);
+		} catch (Exception e ) {
+			e.printStackTrace();
+			e.getCause();
+		}
+		return null;
 	}
 	
 }
